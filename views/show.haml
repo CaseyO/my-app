@@ -1,0 +1,18 @@
+%h1= @title
+%table.pure-table
+  %thead
+    %tr
+      %td Title
+      %td Length
+      %td Description
+      %td Genre
+  %tbody
+    %tr
+      %td= @video.title
+      %td= @video.length
+      %td= @video.description
+      %td= @video.genre
+      %td
+        %a{ :href => "#" } Watch
+      %td
+        %a{ :href => "/video/watch/#{@video.id}" } Watch
